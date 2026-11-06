@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>My Pink Planner</h1>
+            <p>Organize your studies, one task at a time!</p>
+        </header>
+
+        <!-- Add Task Section -->
+        <section class="add-task-section">
+
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskName"
+                    placeholder="Enter your task name"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="taskDate"
+                    required
+                >
+
+                <select id="taskPriority">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+
+                <button type="submit" id="submitButton">+ Add Task</button>
+<button type="button" id="cancelEditButton" hidden>Cancel</button>
+
+            </form>
+
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+
+            <h2>My Progress</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3 id="totalTasks">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="completedTasks">0</h3>
+                    <p>Completed</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="pendingTasks">0</h3>
+                    <p>Pending</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Task List Section -->
+        <section class="task-list">
+
+            <h2>My Tasks</h2>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar-container">
+
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+
+                <p id="progressPercentage">0% Completed</p>
+
+            </div>
+
+            <!-- Search, Filter and Sort -->
+            <div class="task-controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your tasks..."
+                >
+
+                <select id="filterStatus">
+                    <option value="All">All Tasks</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <select id="sortTasks">
+                    <option value="earliest">Earliest Deadline</option>
+                    <option value="latest">Latest Deadline</option>
+                </select>
+
+            </div>
+
+            <!-- Tasks will appear here -->
+            <div id="tasksContainer">
+
+                <p id="emptyMessage">
+                    No tasks added yet. Start by adding one!
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with love for productive students ♡</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
