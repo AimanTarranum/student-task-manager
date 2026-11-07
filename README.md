@@ -1,6 +1,8 @@
 # student-task-manager
 a task manager for students subtle, soft-pink aesthetic, thoughtfully designed to blend elegant visuals with seamless functionality, making academic organization both intuitive and enjoyable.
 
+https://aimantarranum.github.io/student-task-manager/
+
 ABOUT THE PROJECT
 
 Student Task Manager is a beginner-friendly web application developed using HTML, CSS, and JavaScript. It allows students to add, edit, delete, and organize their tasks in one place.
